@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of words</h2>
+<p>
+    @Html.ActionLink("Back to List", "../SpeechFiles")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Words
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item)
+            </td>                       
+        </tr>
+    }
+
+</table>
+

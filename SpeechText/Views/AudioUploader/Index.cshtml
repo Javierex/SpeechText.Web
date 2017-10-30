@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Uploader Speech</h2>
+
+<p>El contenido de la URL del audio debe ser un archivo hablado en español y en formato WAV</p>
+
+<p>Para crear un archivo de audio ingrese a siguiente <a href="https://online-voice-recorder.com/es/">Link</a>.</p>
+<p>Para convertir el archivo de audio a formato WAV ingrese al siguiente <a href="https://www.aconvert.com/audio/">Link</a>.</p>
+
+@using (Html.BeginForm("Index", "AudioUploader", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+{
+    <input type="text" name="file" />
+    <input type="submit" value="Send" />
+}
+
