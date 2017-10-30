@@ -20,7 +20,7 @@ namespace SpeechText.Controllers
 
         public AudioUploaderController()
         {
-            serverFolvderPath = "~/Speech/audio.wav";
+            serverFolvderPath = "Speech/audio.wav";
             audioHelper = new AudioHelper();
             
         }
